@@ -89,10 +89,10 @@ class Library:
 class LibraryManager:
     """Менеджер для взаимодействия с классом Library."""
 
-    def __init__(self) -> None:
+    def __init__(self, json_file: str) -> None:
         """Инициализация класса Library."""
 
-        self.__library = Library()
+        self.__library = Library(json_file)
 
     @staticmethod
     def __get_book_info(book: dict) -> str:

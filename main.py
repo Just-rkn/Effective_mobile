@@ -4,7 +4,7 @@ from library import LibraryManager
 def main():
     """Функция для отображения интерфейса библеотеки."""
 
-    library: LibraryManager = LibraryManager()
+    library: LibraryManager = LibraryManager('books.json')
 
     print(
         '\nМеню:',
